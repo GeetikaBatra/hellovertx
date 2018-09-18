@@ -1,323 +1,61 @@
-
-De
-RH
-+
-Developers
-@geetikabatra
-
-
-PUBLIC CHANNELS
-+
-#openshiftio
-devsuite
-fabric8-analytics
-fabric8-build
-Off-Topic
-openshiftio-platform
-openshiftio-saas
-tools-releng-qe
-More...
-PRIVATE CHANNELS
-+
-devtools-servicedel
-f8a-serv-integration
-OSIO Gemini-RHEL
-DIRECT MESSAGES
-+
-aagam
-adisakala
-akonarde
-alexey
-anindya
-arcolife
-aslak
-asrisail
-avni
-2avni, slenka
-baijum
-concaf
-dgaur
-dhritishikhar
-dipak
-fbricon
-gacton
-2hemani, sukhvir-kaur
-geetikabatra (you)
-hemani
-ibrahim
-jakumar
-2jakumar, ljelinko
-jeffmaury
-jfchevrette
-jmelis
-jpopelka
-jyasveer
-kamesh
-kbsingh
-ldimaggi
-ljelinko
-macermak
-mallika
-mitesh
-2mitesh, samuzzal
-msrb
-naina
-nboldt
-nshaikh
-nurali
-pbergene
-pgarg
-pkajaba
-podvody
-pradeepto
-pranav
-preeti
-procrypt
-psrna
-ptisnovs
-ravindra
-rawagner
-rgarg
-riuvshyn
-saket
-samuzzal
-sara-02
-sgk
-shoubhikbose
-siva
-slavek
-slemeur
-slenka
-snarwade
-srikrishna
-sudhirverma
-sukhvir-kaur
-sunil
-thrcka
-tuxdna
-vasu_lakkaraju
-vedant
-vpavlin
-vprusa
-yusuf_zainee
-More...
-
-
-aagam
-OnlineAdd a channel description
-
-
-Search
-
-
-Load more messages
-Wed, Aug 15, 2018
-aagam profile image	
-aagam
-2:15 PM
-
-1
-Thanks for letting me know 
-
-geetikabatra profile image	
-geetikabatra
-2:15 PM
-Your welcome 
-
-Tue, Sep 11, 2018
-geetikabatra profile image	
-geetikabatra
-3:13 PM
-BJN?
-
-aagam profile image	
-aagam
-3:13 PM
-sure wait
-
-https://bluejeans.com/4733801241
-
-geetikabatra profile image	
-geetikabatra
-3:15 PM
-joined
-
-Fri, Sep 14, 2018
-geetikabatra profile image	
-geetikabatra
-11:50 AM
-Ping
-
-Gemini (Geetika / Aagam)
-Collated Report and email to be sent to devtools-leads
-Logging for Gemini
-Experimental API to be promoted as <user-repo/scan>
-Unit tests and Integration tests
-
-This is all the work for this sprint.
-
-Can you give me an overview of what is needed from my end here?>
-
-aagam profile image	
-aagam
-12:00 PM
-Can you take up first two tasks?
-
-I have already started the last two
-
-aagam profile image	
-aagam
-12:02 PM
-
-4
-https://github.com/openshiftio/openshift.io/issues/4324
-
-geetikabatra profile image	
-geetikabatra
-12:05 PM
-okay. I will
-
-What does making it primary means?
-
-aagam profile image	
-aagam
-12:07 PM
-That means, the experimental endpoint should be the primary endpoint for user scans
-
-geetikabatra profile image	
-geetikabatra
-12:09 PM
-so, you want code refactoring which includes reusing the code under experimental method in the scan method.
-
-and would the experiment method completely deleted?
-
-aagam profile image	
-aagam
-12:11 PM
-No no, I think you just misunderstood what I said, I am working on the whole issue. All you need to work on is the collated report and logging
-
-You need to create an issue for that
-
-geetikabatra profile image	
-geetikabatra
-12:11 PM
-ohh, okay
-
-For collated report, who to talk to @jmelis ?
-
-aagam profile image	
-aagam
-12:13 PM
-Talk to Sam
-
-geetikabatra profile image	
-geetikabatra
-12:13 PM
-Okay
-
-Thanks
-
-aagam profile image	
-aagam
-1:19 PM
-
-4
-Commented on aagam's message: https://github.com/openshiftio/openshift.io/issues/4324
-Please unassign yourself from this issue. Create a new one for collated report and logging.
-
-geetikabatra profile image	
-geetikabatra
-3:04 PM
-Done
-
-aagam profile image	
-aagam
-3:04 PM
-Thanks 
-
-geetikabatra profile image	
-geetikabatra
-3:04 PM
-No issues 
-
-Tue, Sep 18, 2018
-New Messages
-aagam profile image	
-aagam
-1:55 PM
-pom.xml
-XML2KB
-
-Write a message...
-Help
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-
-  <groupId>com.github.jitpack</groupId>
-  <artifactId>maven-simple</artifactId>
-  <version>0.2-SNAPSHOT</version>
-  <packaging>jar</packaging>
-
-  <name>Simple Maven example</name>
-  <url>https://jitpack.io/#jitpack/maven-simple/0.1</url>
-
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.geronimo.modules</groupId>
-      <artifactId>geronimo-tomcat6</artifactId>
-      <version>2.2.1</version>
-    </dependency>
-  </dependencies>
-  
-  <build>
-    <plugins>
-    
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.2</version>
-        <configuration> <!-- Compile java 7 compatible bytecode -->
-          <source>1.7</source>
-          <target>1.7</target>
-        </configuration>
-      </plugin>
-      
-      <plugin>  <!-- Create sources.jar -->
-            <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-      </plugin>
-            
-      <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-      </plugin>
-    </plugins>
-  </build>
-
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<groupId>com.github.jitpack</groupId>
+<artifactId>maven-simple</artifactId>
+<version>0.2-SNAPSHOT</version>
+<packaging>jar</packaging>
+<name>Simple Maven example</name>
+<url>https://jitpack.io/#jitpack/maven-simple/0.1</url>
+<dependencies>
+<dependency>
+<groupId>junit</groupId>
+<artifactId>junit</artifactId>
+<version>4.12</version>
+<scope>test</scope>
+</dependency>
+<dependency>
+<groupId>org.apache.geronimo.modules</groupId>
+<artifactId>geronimo-tomcat6</artifactId>
+<version>2.2.1</version>
+</dependency>
+</dependencies>
+<build>
+<plugins>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-compiler-plugin</artifactId>
+<version>3.2</version>
+<configuration>
+ <!--  Compile java 7 compatible bytecode  -->
+<source>1.7</source>
+<target>1.7</target>
+</configuration>
+</plugin>
+<plugin>
+ <!--  Create sources.jar  -->
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-source-plugin</artifactId>
+<executions>
+<execution>
+<id>attach-sources</id>
+<goals>
+<goal>jar</goal>
+</goals>
+</execution>
+</executions>
+</plugin>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-javadoc-plugin</artifactId>
+<executions>
+<execution>
+<id>attach-javadocs</id>
+<goals>
+<goal>jar</goal>
+</goals>
+</execution>
+</executions>
+</plugin>
+</plugins>
+</build>
 </project>
-File 1 of 1
-Download
